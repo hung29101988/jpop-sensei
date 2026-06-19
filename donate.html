@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Support JPop Sensei · 支持 JPop Sensei</title>
+  <style>
+    :root {
+      --bg: #faf7f8;
+      --fg: #1a1a1a;
+      --dim: #6b6b6b;
+      --accent: #d81b60;
+      --grad-a: #ff5252;
+      --grad-b: #c2185b;
+      --card: #ffffff;
+      --border: rgba(0, 0, 0, 0.1);
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #161416;
+        --fg: #f1f1f1;
+        --dim: #a8a2a5;
+        --card: #211e21;
+        --border: rgba(255, 255, 255, 0.12);
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--fg);
+      font-family: "Noto Sans HK", "Noto Sans TC", -apple-system,
+        "Segoe UI", Roboto, "Hiragino Sans", sans-serif;
+      line-height: 1.6;
+    }
+    .hero {
+      background: linear-gradient(135deg, var(--grad-a), var(--grad-b));
+      color: #fff;
+      text-align: center;
+      padding: 44px 20px 38px;
+    }
+    .hero .logo { width: 64px; height: 64px; }
+    .hero h1 { margin: 12px 0 4px; font-size: 24px; }
+    .hero p { margin: 0; opacity: 0.92; font-size: 15px; }
+    .wrap { max-width: 760px; margin: 0 auto; padding: 28px 18px 64px; }
+    .lead {
+      text-align: center;
+      color: var(--dim);
+      font-size: 15px;
+      margin: 4px 0 28px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 16px;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 20px 18px;
+      text-align: center;
+    }
+    .card h3 { margin: 0 0 4px; font-size: 16px; }
+    .card .region { font-size: 12px; color: var(--dim); margin-bottom: 12px; }
+    .card img.qr {
+      width: 210px;
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      background: #fff;
+      padding: 8px;
+      display: block;
+      margin: 0 auto;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 6px;
+      padding: 11px 22px;
+      border-radius: 999px;
+      background: linear-gradient(135deg, var(--grad-a), var(--grad-b));
+      color: #fff;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 15px;
+    }
+    .btn:hover { opacity: 0.92; }
+    .hint { font-size: 12px; color: var(--dim); margin-top: 10px; }
+    .thanks {
+      text-align: center;
+      margin-top: 40px;
+      color: var(--dim);
+      font-size: 14px;
+    }
+    .back { color: var(--accent); text-decoration: none; }
+  </style>
+</head>
+<body>
+  <div class="hero">
+    <svg class="logo" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+      <rect width="128" height="128" rx="28" fill="rgba(255,255,255,0.18)"/>
+      <g fill="#ffffff">
+        <ellipse cx="47" cy="92" rx="11.5" ry="8.5" transform="rotate(-18 47 92)"/>
+        <ellipse cx="87" cy="84" rx="11.5" ry="8.5" transform="rotate(-18 87 84)"/>
+        <rect x="52.5" y="44" width="6" height="47" rx="3"/>
+        <rect x="92.5" y="36" width="6" height="47" rx="3"/>
+        <path d="M52.5 37 L98.5 29 L98.5 44 L52.5 52 Z"/>
+      </g>
+      <circle cx="51" cy="22" r="4.5" fill="#fff"/>
+      <circle cx="67" cy="19.5" r="4.5" fill="#fff"/>
+      <circle cx="83" cy="17" r="4.5" fill="#fff"/>
+    </svg>
+    <h1>請我喝杯咖啡 · Buy me a coffee</h1>
+    <p>多謝你支持 JPop Sensei 嘅開發 ❤ Thank you for supporting JPop Sensei</p>
+  </div>
+
+  <div class="wrap">
+    <p class="lead">
+      JPop Sensei 係一個獨立開發、完全免費嘅專案。你嘅小小支持,係我繼續更新嘅最大動力。<br />
+      JPop Sensei is a free, independent project — any support helps me keep improving it.
+    </p>
+
+    <div class="grid">
+      <!-- 國際 / International: Ko-fi (cards + PayPal) -->
+      <div class="card" data-method="kofi">
+        <h3>Ko-fi ☕</h3>
+        <div class="region">🌍 國際 / International · 信用卡 Cards + PayPal</div>
+        <a class="btn" href="https://ko-fi.com/hung1029"
+           target="_blank" rel="noopener">Support on Ko-fi</a>
+        <div class="hint">支援信用卡同 PayPal,無需登記<br />Cards &amp; PayPal, no sign-up needed</div>
+      </div>
+
+      <!-- 香港 / Hong Kong: 轉數快 FPS -->
+      <div class="card" data-method="fps">
+        <h3>轉數快 FPS</h3>
+        <div class="region">🇭🇰 香港 / Hong Kong</div>
+        <img class="qr" src="qr/fps-qr.png" alt="FPS 轉數快收款碼"
+             onerror="hideCard(this)" />
+        <div class="hint">用銀行 App 掃描 QR<br />Scan with any banking app</div>
+      </div>
+
+      <!-- 香港 / Hong Kong: PayMe -->
+      <div class="card" data-method="payme">
+        <h3>PayMe</h3>
+        <div class="region">🇭🇰 香港 / Hong Kong</div>
+        <img class="qr" src="qr/payme-qr.png" alt="PayMe 收款碼"
+             onerror="hideCard(this)" />
+        <div class="hint">用 PayMe App 掃描<br />Scan with the PayMe app</div>
+      </div>
+
+      <!-- 中國 / Mainland: 支付寶 Alipay -->
+      <div class="card" data-method="alipay">
+        <h3>支付寶 Alipay</h3>
+        <div class="region">🇨🇳 中國大陸 / Mainland</div>
+        <img class="qr" src="qr/alipay-qr.png" alt="支付寶收款碼"
+             onerror="hideCard(this)" />
+        <div class="hint">用支付寶掃一掃</div>
+      </div>
+
+      <!-- 中國 / Mainland: 微信支付 WeChat Pay -->
+      <div class="card" data-method="wechat">
+        <h3>微信支付 WeChat Pay</h3>
+        <div class="region">🇨🇳 中國大陸 / Mainland</div>
+        <img class="qr" src="qr/wechat-qr.png" alt="微信支付收款碼"
+             onerror="hideCard(this)" />
+        <div class="hint">用微信掃一掃</div>
+      </div>
+    </div>
+
+    <p class="thanks">
+      ありがとうございます！🎵<br />
+      <a class="back" href="https://hung29101988.github.io/jpop-sensei/">← 返回 JPop Sensei</a>
+    </p>
+  </div>
+
+  <script>
+    // Any payment card whose QR image is missing simply hides itself,
+    // so you only need to add the QR codes you actually have.
+    function hideCard(img) {
+      const card = img.closest(".card");
+      if (card) card.style.display = "none";
+    }
+  </script>
+</body>
+</html>
