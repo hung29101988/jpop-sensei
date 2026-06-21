@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>KPop Ssaem — Privacy Policy</title>
+  <style>
+    :root { color-scheme: light dark; }
+    body {
+      font-family: -apple-system, "Segoe UI", Roboto, "Noto Sans KR", sans-serif;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 40px 20px 80px;
+      line-height: 1.7;
+    }
+    h1 { font-size: 24px; }
+    h2 { font-size: 17px; margin-top: 32px; }
+    code { background: rgba(128,128,128,.15); padding: 1px 5px; border-radius: 4px; }
+    .updated { color: #888; font-size: 13px; }
+  </style>
+</head>
+<body>
+  <h1>KPop Ssaem — Privacy Policy</h1>
+  <p class="updated">Effective date: June 21, 2026</p>
+
+  <p>
+    KPop Ssaem ("the extension") helps you learn Korean by displaying
+    time-synced lyrics, romanization, and translations next to music videos.
+    This policy explains what information the extension handles. The short
+    version: <strong>we do not collect, store, or sell any personal data.
+    The extension has no analytics, no tracking, and no server of our
+    own.</strong>
+  </p>
+
+  <h2>Data stored on your device</h2>
+  <p>
+    The extension saves the following <em>locally in your browser</em> using
+    Chrome's <code>storage</code> API, and nowhere else:
+  </p>
+  <ul>
+    <li>Your display settings (romanization on/off, translation language, font size)</li>
+    <li>Lyrics and timing offsets you load or adjust, saved per video so they
+        persist between visits</li>
+    <li>Cached translations, so the same lines are not re-translated</li>
+  </ul>
+  <p>
+    This data never leaves your device, is not visible to us, and is removed
+    if you uninstall the extension or clear extension data.
+  </p>
+
+  <h2>Network requests the extension makes</h2>
+  <p>
+    To do its job, the extension contacts two third-party services. Requests
+    are made only in direct response to your activity:
+  </p>
+  <ul>
+    <li>
+      <strong>lrclib.net</strong> — when you open a video or search for
+      lyrics, the song title/artist text (derived from the video title or
+      typed by you) is sent to lrclib.net to find matching synced lyrics.
+    </li>
+    <li>
+      <strong>translate.googleapis.com</strong> — only if you switch
+      translation on, the lyric lines are sent to Google Translate to obtain
+      translations. No translation requests are made while the feature is off.
+    </li>
+  </ul>
+  <p>
+    Romanization (Hangul → Latin letters) is computed entirely on your device
+    and requires no network request. Neither request includes your identity,
+    browsing history, or any account information. These services receive only
+    the song/lyric text needed to answer the request, along with standard
+    technical information any web server receives (such as IP address). Their
+    own privacy policies govern their handling of requests:
+    <a href="https://lrclib.net">lrclib.net</a>,
+    <a href="https://policies.google.com/privacy">Google</a>.
+  </p>
+
+  <h2>What we do NOT do</h2>
+  <ul>
+    <li>No collection of personal information, browsing history, or watch history</li>
+    <li>No analytics, telemetry, or usage tracking of any kind</li>
+    <li>No advertising networks, and nothing is injected into web pages beyond
+        the extension's own lyrics panel</li>
+    <li>No selling, sharing, or transferring of data to anyone — we never see
+        your data in the first place</li>
+  </ul>
+
+  <h2>Donations</h2>
+  <p>
+    The extension's panel may show an optional donation link. Clicking it
+    simply opens the payment provider's website in a new tab; any payment is
+    handled entirely by that provider under its own terms and privacy policy.
+    The extension itself processes no payment information.
+  </p>
+
+  <h2>Permissions explained</h2>
+  <ul>
+    <li><code>storage</code> — to save your settings and lyrics locally</li>
+    <li><code>activeTab</code> — so clicking the toolbar icon can turn the
+        panel on or off on the current tab</li>
+    <li><code>lrclib.net</code> host access — to fetch community-synced lyrics</li>
+    <li><code>translate.googleapis.com</code> host access — to fetch translations
+        when you enable them</li>
+    <li>Access to <code>youtube.com</code> pages — to display the lyrics panel
+        next to the video you are watching</li>
+  </ul>
+
+  <h2>Children's privacy</h2>
+  <p>
+    The extension does not collect data from anyone, including children, and
+    contains no content targeted at children.
+  </p>
+
+  <h2>Changes to this policy</h2>
+  <p>
+    If a future version of the extension changes how data is handled (for
+    example, adding an optional account feature), this policy will be updated
+    and the effective date above revised before that version is released.
+  </p>
+
+  <h2>Contact</h2>
+  <p>
+    Questions about this policy: <a href="mailto:hung1029@gmail.com">hung1029@gmail.com</a>
+  </p>
+</body>
+</html>
